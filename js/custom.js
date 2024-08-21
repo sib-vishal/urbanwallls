@@ -380,7 +380,7 @@ $(document).ready(function () {
   });
 });
 
-let propertytype;
+let propertytype = "residential";
 $(document).ready(function () {
   // Click event handler for tab items
   $(".form-tabs li").click(function () {
@@ -391,11 +391,18 @@ $(document).ready(function () {
 
       $(".residential-property").removeClass("d-none");
       $(".commercial-property").addClass("d-none");
+      document.getElementById("min-budget").value = "";
+      document.getElementById("max-budget").value = "";
     } else if (target === "commercial") {
       propertytype = "commercial";
 
       $(".commercial-property").removeClass("d-none");
       $(".residential-property").addClass("d-none");
+
+      // reset value
+
+      document.getElementById("min-budget").value = "";
+      document.getElementById("max-budget").value = "";
     }
   });
 });
@@ -405,14 +412,30 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".propertyType").click(function () {
     $(".budget").removeClass("show-dropdown");
+    $(".newselect").removeClass("active");
     $(".property-type-dropdown").toggleClass("show-dropdown");
 
     if (!$(".property-type-dropdown").hasClass("show-dropdown")) {
       $(".price_filter").removeClass("show-dropdown");
     }
   });
+  $(".newselect").click(function () {
+    $(".budget").removeClass("show-dropdown");
+    $(".property-type-dropdown").removeClass("show-dropdown");
+  });
+  $("#commercial-select").click(function () {
+    $(".budget").removeClass("show-dropdown");
+    $(".newselect").removeClass("active");
+    $(".property-type-dropdown").removeClass("show-dropdown");
+  });
+  $("#residential-select").click(function () {
+    $(".budget").removeClass("show-dropdown");
+    $(".newselect").removeClass("active");
+    $(".property-type-dropdown").removeClass("show-dropdown");
+  });
 
-  $("#area_filter").click(function () {
+
+$("#area_filter").click(function () {
     $(".price_filter").toggleClass("show-dropdown");
   });
   $(".other_properties_filter").click(function () {
@@ -429,6 +452,7 @@ $(document).ready(function () {
   $(".budget-btn ").click(function () {
     $(".budget").toggleClass("show-dropdown");
     $(".property-type-dropdown").removeClass("show-dropdown");
+    $(".newselect").removeClass("active");
   });
   $("#max-budget").focus(function () {
     $(".min-budget-option ").addClass("d-none");
@@ -528,7 +552,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const residentialSelect =
       document.getElementById("residential-select").value;
     const commercialSelect = document.getElementById("commercial-select").value;
-    const location = document.getElementById("location").value;
+    // const location = document.getElementById("location").value;
     const minBudget = document.getElementById("min-budget").value;
     const maxBudget = document.getElementById("max-budget").value;
 
@@ -538,7 +562,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("propertytype", propertytype);
     console.log("Residential Select:", residentialSelect);
     console.log("Commercial Select:", commercialSelect);
-    console.log("Location:", location);
+    console.log("Location:", propertyLocation);
     console.log("Min Budget:", minBudget);
     console.log("Max Budget:", maxBudget);
     console.log("Property Types:", checkedPropertyTypes);
@@ -560,32 +584,50 @@ document.querySelectorAll(".newselect").forEach((select) => {
   });
 });
 
+let propertyLocation;
+
 document.querySelectorAll('.newselect input[type="radio"]').forEach((radio) => {
   radio.addEventListener("change", (e) => {
     const select = e.target.closest(".newselect");
     const selected = select.querySelector(".newselected");
     const checkedLabel = select.querySelector(`label[for="${e.target.id}"]`);
-
     if (checkedLabel) {
       selected.textContent = checkedLabel.getAttribute("data-txt");
+      propertyLocation = selected.textContent
     }
-
     select.classList.remove("active");
   });
 });
 
+
+
 document.querySelectorAll(".new-btnBox ul li").forEach((item, i) => {
-
-
   item.addEventListener("click", () => {
     document.querySelector(".new-btnBox ul .active").classList.remove("active");
     item.classList.add("active");
-
-    
-
-    document.querySelector(".activeBox").classList.remove('activeBox');
-
-
+    document.querySelector(".activeBox").classList.remove("activeBox");
     document.querySelectorAll(".box-new")[i].classList.add("activeBox");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const inputs = [
+    document.getElementById("min-budget"),
+    document.getElementById("max-budget"),
+  ];
+
+  inputs.forEach((input) => {
+    input.addEventListener("keydown", (e) => {
+      e.preventDefault();
+    });
+
+    input.addEventListener("paste", (e) => {
+      e.preventDefault();
+    });
+
+    input.addEventListener("input", (e) => {
+      e.preventDefault();
+      input.value = e.target.defaultValue;
+    });
   });
 });

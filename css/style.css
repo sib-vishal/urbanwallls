@@ -1755,7 +1755,7 @@ input[type="range"]::-moz-range-thumb {
   width: 400px;
   left: 39%;
   /* transform: translateX(calc(100% - 610px)); */
-  transition: all 0.3s ease-in-out;
+  /* transition: all 0.3s ease-in-out; */
 }
 .property-type-dropdown .dropdown-inner-box {
   overflow: hidden;

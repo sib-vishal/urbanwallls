@@ -14,7 +14,7 @@
    <meta name="twitter:title" content="">
    <meta name="twitter:description" content="">
    <meta name="twitter:image" content="images/logo.png">
-
+   <!-- 
    <script>
       $(function() {
          var mumbaiLocation = [
@@ -43,9 +43,8 @@
             source: mumbaiLocation
          });
       });
-   </script>
-
-
+   </script> -->
+ 
 
 
 </head>
@@ -215,12 +214,12 @@
                      </div>
                   </div>
                   <div class="locationFeild ui-widget">
-
-
                      <i class="fa-solid fa-location-dot"></i>
                      <div class="newselect" id="dropdown1">
                         <div class="d-flex">
-                           <div class="newselected" data-default="Add Location" data-one="Add Location" data-two="Sundar Nagar" data-three="Mindspace" data-four="Kachpada" data-five="Evershine Nagar">
+                           <div class="newselected" data-default="Add Location" data-one="Add Location"
+                              data-two="Sundar Nagar" data-three="Mindspace" data-four="Kachpada"
+                              data-five="Evershine Nagar">
                               Add Location
 
                            </div>
@@ -251,9 +250,6 @@
                            </div>
                         </div>
                      </div>
-
-
-
                      <!-- <p><i class="fa-solid fa-location-dot"></i> Add Location</p>
                      <i class="fa fa-chevron-down"></i>
                      <div class="propertyDropDown d-none">
@@ -280,10 +276,12 @@
                            <div>
                               <div class="d-flex budget-inputs">
                                  <div>
-                                    <input type="text" id="min-budget" name="min-budget" placeholder="Min">
+                                    <input type="text" id="min-budget" class="no-write-input" name="min-budget"
+                                       placeholder="Min">
                                  </div>
                                  <div>
-                                    <input type="text" id="max-budget" name="max-budget" placeholder="Max">
+                                    <input type="text" id="max-budget" class="no-write-input" name="max-budget"
+                                       placeholder="Max">
                                  </div>
                               </div>
                               <div class="options">
@@ -309,8 +307,10 @@
                      </div>
                   </div>
                   <div class="formBtn">
-                      <a href="property.php">
-                     <button id="search-btn" class="btnTheme w-100"><i class="fa fa-search"></i> Search</button></a>
+                     <!-- <a href="property.php">
+                        <button id="search-btn" class="btnTheme w-100"><i class="fa fa-search"></i> Search</button></a> -->
+                   
+                        <button id="search-btn" class="btnTheme w-100"><i class="fa fa-search"></i> Search</button>
                   </div>
                </div>
                <div class="property-type-dropdown">
