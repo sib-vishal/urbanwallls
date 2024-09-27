@@ -434,8 +434,7 @@ $(document).ready(function () {
     $(".property-type-dropdown").removeClass("show-dropdown");
   });
 
-
-$("#area_filter").click(function () {
+  $("#area_filter").click(function () {
     $(".price_filter").toggleClass("show-dropdown");
   });
   $(".other_properties_filter").click(function () {
@@ -593,13 +592,11 @@ document.querySelectorAll('.newselect input[type="radio"]').forEach((radio) => {
     const checkedLabel = select.querySelector(`label[for="${e.target.id}"]`);
     if (checkedLabel) {
       selected.textContent = checkedLabel.getAttribute("data-txt");
-      propertyLocation = selected.textContent
+      propertyLocation = selected.textContent;
     }
     select.classList.remove("active");
   });
 });
-
-
 
 document.querySelectorAll(".new-btnBox ul li").forEach((item, i) => {
   item.addEventListener("click", () => {
@@ -629,5 +626,19 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       input.value = e.target.defaultValue;
     });
+  });
+});
+
+// new prjects
+
+const propertyLists = document.querySelectorAll(".new_projects_list");
+
+propertyLists.forEach((link) => {
+  link.addEventListener("click", function (event) {
+    if (!event.target.classList.contains('callback') && !event.target.classList.contains('share-whatsapp') && !event.target.classList.contains('btn-primary')) {
+      
+      const url = this.getAttribute('data-url');
+      window.location.href = url;
+  }
   });
 });

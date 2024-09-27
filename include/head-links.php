@@ -10,7 +10,7 @@
 <link rel="canonical" href="<?php echo $page_url; ?>">
 
 <!-- preload -->
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="style" />
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" as="style" />
 <link rel="preload" href="css/style.css?v=<?= time() ?>" as="style" />
 <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" />
 <link rel="preload" href="css/responsive.css?v=<?= time() ?>" as="style" />

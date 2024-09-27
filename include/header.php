@@ -54,3 +54,70 @@
 		</div>
 	</div>
 </header>
+
+
+
+
+
+
+
+
+
+
+<div class="modal fade show" id="formEnquire" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true"
+	role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header ">
+				<h3 class="modal-title fontHeading fontWeight700 
+					small_heading" id="exampleModalLabel"><span>Get in touch with us</span></h3>
+				<button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form method="post" action="email.php">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="formItem mb-0">
+								<div class="form-floating">
+									<input type="hidden" name="hidden">
+									<input type="text" required="" class="form-control" id="name" name="name"
+										placeholder="name">
+									<label for="name">Name</label>
+								</div>
+							</div>
+							<div class="formItem mt-3 mb-0">
+								<div class="form-floating">
+									<input type="tel" required="" class="form-control" id="phone" name="phone"
+										placeholder="phone">
+									<label for="phone">Phone</label>
+								</div>
+							</div>
+							<div class="formItem mt-3">
+								<div class="form-floating mb-2">
+									<input type="email" required="" class="form-control" id="email" name="email"
+										placeholder="email">
+									<label for="email">Email</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="formItem mt-3">
+						<button id="cpatchaSubmitBtn2" type="submit" name="submit"
+							class="btnColor rounded border-0 w-100">Send
+							Request</button>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer justify-content-between bg-black ">
+				<div class="itemModal">
+					<a class="text-white" href="https://api.whatsapp.com/send?phone=amp;text=Hi"><i class="me-2 fab fa-whatsapp"></i>
+						WhatsApp</a>
+				</div>
+				<div class="itemModal">
+					<a class="text-white" href="tel:"><i class="fa fa-phone me-2"></i>123456778</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
