@@ -197,43 +197,43 @@
                                 <h3 class="fontHeading text_primary small_heading">Filter</h3>
                             </div>
                             <div class="filterItem mt-lg-4 mt-3 bhkfilter ">
-                             
-                                    <div class="filterHeader d-flex align-items-center justify-content-between">
-                                        <h5 class="title fontHeading">No. of Bedroom</h5>
-                                        <button class="iconBtn"><i class="bi bi-arrow-clockwise"></i> Reset</button>
-                                    </div>
 
-                                    <div class="listBhk mt-4">
-                                        <div class="checkBox" id="resetInput">
-                                            <ul>
-                                                <li>
-                                                    <input type="checkbox" name="" id="1rk">
-                                                    <label for="1rk">1 RK</label>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" name="" id="1bhk">
-                                                    <label for="1bhk">1 BHK</label>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" name="" id="2bhk">
-                                                    <label for="2bhk">2 BHK</label>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" name="" id="3bhk">
-                                                    <label for="3bhk">3 BHK</label>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" name="" id="4bhk">
-                                                    <label for="4bhk">4 BHK</label>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" name="" id="4bhk+">
-                                                    <label for="4bhk+">4 BHK+</label>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                <div class="filterHeader d-flex align-items-center justify-content-between">
+                                    <h5 class="title fontHeading">No. of Bedroom</h5>
+                                    <button class="iconBtn"><i class="bi bi-arrow-clockwise"></i> Reset</button>
+                                </div>
+
+                                <div class="listBhk mt-4">
+                                    <div class="checkBox" id="resetInput">
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" name="" id="1rk">
+                                                <label for="1rk">1 RK</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="" id="1bhk">
+                                                <label for="1bhk">1 BHK</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="" id="2bhk">
+                                                <label for="2bhk">2 BHK</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="" id="3bhk">
+                                                <label for="3bhk">3 BHK</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="" id="4bhk">
+                                                <label for="4bhk">4 BHK</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="" id="4bhk+">
+                                                <label for="4bhk+">4 BHK+</label>
+                                            </li>
+                                        </ul>
                                     </div>
-                                
+                                </div>
+
 
                             </div>
                             <!-- <div class="filterItem mt-lg-4 mt-3 mb-4">
@@ -745,9 +745,179 @@
                 </div>
             </div>
         </section>
-        <?php include 'include/footer.php'; ?>
+        <section>
+            <div class="containerFull">
+                <h4 class="fontHeading heading">
+                    Featured Properties
+                </h4>
+                <div class="featured_properties_carousel position-relative d-flex align-items-center">
+                    <div>
+
+                        <div class="swiper-button-prev "></div>
+                    </div>
+
+                    <div class="swiper featured_properties mt-5  pb-5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide ">
+                                <div class="itemPopular p-0" style="width: 100%; display:block;">
+                                    <a href="#" tabindex="0">
+                                        <div class="imgPopular">
+                                            <picture>
+                                                <source srcset="images/3bhk-flat.webp" type="image/webp">
+                                                <img src="images/3bhk-flat.jpg">
+                                            </picture>
+                                            <div class="numberImg">
+                                                <i class="far fa-image"></i> 16
+                                            </div>
+                                        </div>
+                                        <div class="propertDetailHome">
+                                            <p>3 BHK</p>
+                                            <h4 class="title mt-2 fontHeading fontWeight600">₹40 Lac &nbsp; | &nbsp; 720
+                                                sqft</h4>
+                                            <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i>
+                                                Kandivali East, Mumabi
+                                            </p>
+                                            <span>Explore <i class="fa fa-arrow-right"></i></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide ">
+                                <div class="itemPopular p-0" style="width: 100%; display:block;">
+                                    <a href="#" tabindex="0">
+                                        <div class="imgPopular">
+                                            <picture>
+                                                <source srcset="images/3bhk-flat.webp" type="image/webp">
+                                                <img src="images/3bhk-flat.jpg">
+                                            </picture>
+                                            <div class="numberImg">
+                                                <i class="far fa-image"></i> 16
+                                            </div>
+                                        </div>
+                                        <div class="propertDetailHome">
+                                            <p>3 BHK</p>
+                                            <h4 class="title mt-2 fontHeading fontWeight600">₹40 Lac &nbsp; | &nbsp; 720
+                                                sqft</h4>
+                                            <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i>
+                                                Kandivali East, Mumabi
+                                            </p>
+                                            <span>Explore <i class="fa fa-arrow-right"></i></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide ">
+                                <div class="itemPopular p-0" style="width: 100%; display:block;">
+                                    <a href="#" tabindex="0">
+                                        <div class="imgPopular">
+                                            <picture>
+                                                <source srcset="images/3bhk-flat.webp" type="image/webp">
+                                                <img src="images/3bhk-flat.jpg">
+                                            </picture>
+                                            <div class="numberImg">
+                                                <i class="far fa-image"></i> 16
+                                            </div>
+                                        </div>
+                                        <div class="propertDetailHome">
+                                            <p>3 BHK</p>
+                                            <h4 class="title mt-2 fontHeading fontWeight600">₹40 Lac &nbsp; | &nbsp; 720
+                                                sqft</h4>
+                                            <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i>
+                                                Kandivali East, Mumabi
+                                            </p>
+                                            <span>Explore <i class="fa fa-arrow-right"></i></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide ">
+                                <div class="itemPopular p-0" style="width: 100%; display:block;">
+                                    <a href="#" tabindex="0">
+                                        <div class="imgPopular">
+                                            <picture>
+                                                <source srcset="images/3bhk-flat.webp" type="image/webp">
+                                                <img src="images/3bhk-flat.jpg">
+                                            </picture>
+                                            <div class="numberImg">
+                                                <i class="far fa-image"></i> 16
+                                            </div>
+                                        </div>
+                                        <div class="propertDetailHome">
+                                            <p>3 BHK</p>
+                                            <h4 class="title mt-2 fontHeading fontWeight600">₹40 Lac &nbsp; | &nbsp; 720
+                                                sqft</h4>
+                                            <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i>
+                                                Kandivali East, Mumabi
+                                            </p>
+                                            <span>Explore <i class="fa fa-arrow-right"></i></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide ">
+                                <div class="itemPopular p-0" style="width: 100%; display:block;">
+                                    <a href="#" tabindex="0">
+                                        <div class="imgPopular">
+                                            <picture>
+                                                <source srcset="images/3bhk-flat.webp" type="image/webp">
+                                                <img src="images/3bhk-flat.jpg">
+                                            </picture>
+                                            <div class="numberImg">
+                                                <i class="far fa-image"></i> 16
+                                            </div>
+                                        </div>
+                                        <div class="propertDetailHome">
+                                            <p>3 BHK</p>
+                                            <h4 class="title mt-2 fontHeading fontWeight600">₹40 Lac &nbsp; | &nbsp; 720
+                                                sqft</h4>
+                                            <p class="text mt-3"><i class="fa fa-map-marker-alt text_primary"></i>
+                                                Kandivali East, Mumabi
+                                            </p>
+                                            <span>Explore <i class="fa fa-arrow-right"></i></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- <div class="swiper-button-next "></div> -->
+                        <!-- <div class="swiper-button-prev "></div> -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div>
+
+                        <div class="swiper-button-next "></div>
+                    </div>
+                </div>
+
+
+            </div>
+
+    </div>
+    </section>
+    <?php include 'include/footer.php'; ?>
     </div>
     <?php include 'include/footer-links.php'; ?>
+    <script>
+        var swiper = new Swiper(".featured_properties", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            //   centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>

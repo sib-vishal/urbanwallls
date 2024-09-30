@@ -249,6 +249,37 @@
     .faqHeader h4{
         font-size: 16px;
     }
+
+
+    /* new datials page */
+    .download_btn  {
+        font-size: 12px;
+    }
+    .amenities{
+        width:500px !important;
+    }
+    .amenities{
+       font-size:14px ;
+    }
+    .aminities_table{
+        width: 700px !important;
+    }
+    .aminities_table td {
+       font-size: 14px;
+    }
+    #price-list table{
+        font-size: 14px;
+    }
+    .new_projects_carousel .slide-box{
+        height: 350px;
+    }
+
+    .info-tabs_main .info-tabs .tabs_link{
+        font-size: 12px !important;
+    }
+    .info-tabs .tabs_link {
+        padding: 5px !important;
+    }
 }
 
 
@@ -256,6 +287,12 @@
 
 
 @media (min-width: 768px) and (max-width: 990px) {
+    .projects_btn button{
+        font-size: 12px;
+    }
+    .projects_btn a{
+        font-size: 12px;
+    }
 
 }
 @media (min-width: 1024px){

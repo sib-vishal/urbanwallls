@@ -2175,6 +2175,25 @@ input[type="range"]::-moz-range-thumb {
 .btnColor:hover {
   background-color: #ff8000cc;
 }
+.btnTheme3 {
+  border: 1px solid #636262;
+  display: inline-block;
+  padding: 8px 20px;
+  color:#636262;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.btnTheme3:hover {
+  background: #636262;
+  color: #fff;
+}
+.btnColor:hover {
+  background-color: #ff8000cc;
+}
 .b {
   border: 1px solid red;
 }
@@ -2396,14 +2415,14 @@ input[type="range"]::-moz-range-thumb {
 }
 
 /* rating ansd review */
- .ratingFlexBox {
+.ratingFlexBox {
   margin-top: 30px;
   display: flex;
   display: -webkit-flex;
   align-items: center;
 }
 
- .ratingFlex {
+.ratingFlex {
   padding: 0 20px;
   width: 50%;
   flex: none;
@@ -2419,11 +2438,11 @@ input[type="range"]::-moz-range-thumb {
   content: "";
   background: #f0f0f0;
 }
- .ratingBox {
+.ratingBox {
   display: block;
   text-align: center;
 }
- .ratingValue {
+.ratingValue {
   font-size: 40px;
   color: #333;
   display: block;
@@ -2439,14 +2458,14 @@ input[type="range"]::-moz-range-thumb {
   font-size: 14px;
 }
 
- .ratingBox .rating {
+.ratingBox .rating {
   margin-top: 5px;
   display: flex;
   display: -webkit-flex;
   justify-content: center;
 }
 
- .ratingBox .rating em {
+.ratingBox .rating em {
   width: 23px;
   height: 23px;
 }
@@ -2498,4 +2517,39 @@ input[type="range"]::-moz-range-thumb {
   background: #f9ca10;
   height: 4px;
   border-radius: 5px;
+}
+
+.florplangrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(auto, 1fr));
+  gap: 10px;
+}
+
+.featured_properties_carousel .swiper-pagination-bullet-active,.featured_projects .swiper-pagination-bullet-active {
+  background-color: var(--primary-color);
+}
+.featured_projects_carousel .swiper-button-next,
+.featured_projects_carousel .swiper-button-prev,
+.featured_properties_carousel .swiper-button-next,
+.featured_properties_carousel .swiper-button-prev
+ {
+  /* position: relative  !important; */
+  color: var(--primary-color);
+  background-color: var(--primary-color);
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 100%;
+}
+.featured_projects_carousel .swiper-button-next,.featured_properties_carousel .swiper-button-next{
+  right: -24px !important;
+}
+.featured_projects_carousel .swiper-button-prev,.featured_properties_carousel .swiper-button-prev{
+  left: -24px !important;
+}
+.featured_projects_carousel .swiper-button-next:after,.featured_properties_carousel .swiper-button-prev:after,.featured_properties_carousel .swiper-button-next:after,
+.featured_projects_carousel .swiper-button-prev:after {
+  /* background-color: #fff !important;
+  */
+  font-size: 20px !important;
+  color: #fff !important;
 }
